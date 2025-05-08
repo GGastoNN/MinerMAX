@@ -1,8 +1,17 @@
-# Usamos una imagen base de Nginx (un servidor web muy ligero)
-FROM nginx:alpine
+# Usamos una imagen base de Node.js
+FROM node:alpine
 
-# Copiamos el archivo index.html al contenedor
-COPY index.html /usr/share/nginx/html/index.html
+# Establecemos el directorio de trabajo
+WORKDIR /app
 
-# Exponemos el puerto 80 para que se pueda acceder al servidor
+# Copiamos los archivos del proyecto al contenedor
+COPY . /app
+
+# Instalamos dependencias (si fuera necesario)
+RUN npm install
+
+# Exponemos el puerto 80
 EXPOSE 80
+
+# Ejecutamos el servidor
+CMD ["node", "server.js"]
