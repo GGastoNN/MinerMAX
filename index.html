@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MinerMAX - Minería Monero de Alto Rendimiento</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    #tsparticles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white relative overflow-x-hidden">
+
+  <!-- Fondo animado con partículas -->
+  <div id="tsparticles"></div>
+
+  <!-- Header -->
+  <header class="p-6 bg-gray-800 bg-opacity-90 shadow-md relative z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-yellow-400">MinerMAX</h1>
+      <a href="#descargar" class="bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-yellow-300 transition">Descargar</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 relative z-10">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Minería Monero sin complicaciones</h2>
+    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">MinerMAX es el software de minería optimizado para obtener el máximo rendimiento con bajo consumo y una interfaz sencilla.</p>
+    <a href="#descargar" class="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-lg text-lg hover:bg-yellow-300 transition">Descargar Ahora</a>
+  </section>
+
+  <!-- Características -->
+  <section class="py-16 bg-gray-800 bg-opacity-90 relative z-10">
+    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
+      <div>
+        <h3 class="text-2xl font-bold text-yellow-400 mb-2">Rendimiento Máximo</h3>
+        <p class="text-gray-300">Optimizado para CPUs y GPUs, MinerMAX exprime el hardware para obtener la mayor cantidad de XMR.</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold text-yellow-400 mb-2">Fácil de Usar</h3>
+        <p class="text-gray-300">Interfaz clara y amigable que permite comenzar a minar en minutos, sin conocimientos técnicos avanzados.</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold text-yellow-400 mb-2">Seguridad y Privacidad</h3>
+        <p class="text-gray-300">Totalmente libre de spyware y respetuoso con tu privacidad. Ideal para minería segura de Monero.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Descarga -->
+  <section id="descargar" class="py-20 text-center relative z-10 bg-opacity-90">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Descarga MinerMAX para Windows</h2>
+    <p class="text-gray-400 mb-8">Haz clic en el botón para obtener el instalador oficial.</p>
+    <a href="https://tuservidor.com/minermax-windows.zip" class="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded hover:bg-yellow-300 transition inline-block text-lg">Descargar para Windows</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center text-gray-500 py-6 relative z-10">
+    &copy; 2025 MinerMAX. Todos los derechos reservados.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      background: {
+        color: { value: "#111827" }
+      },
+      particles: {
+        number: {
+          value: 50
+        },
+        color: {
+          value: "#f7931a" // color naranja Monero
+        },
+        shape: {
+          type: "circle"
+        },
+        opacity: {
+          value: 0.5
+        },
+        size: {
+          value: 4,
+          random: true
+        },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "none",
+          random: true,
+          outModes: {
+            default: "bounce"
+          }
+        }
+      },
+      detectRetina: true
+    });
+  </script>
+</body>
+</html>
