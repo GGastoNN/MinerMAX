@@ -16,6 +16,20 @@
       top: 0;
       left: 0;
     }
+
+    /* Animación de Fade-in para el header */
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+    
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
   </style>
 </head>
 <body class="bg-gray-900 text-white relative overflow-x-hidden">
@@ -23,33 +37,42 @@
   <!-- Fondo animado con partículas -->
   <div id="tsparticles"></div>
 
-  <!-- Header -->
-  <header class="p-6 bg-gray-800 bg-opacity-90 shadow-md relative z-10">
+  <!-- Header con Animación de Fade-in -->
+  <header class="p-6 bg-gray-800 bg-opacity-90 shadow-md relative z-10 fade-in">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold text-yellow-400">MinerMAX</h1>
       <a href="#descargar" class="bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-yellow-300 transition">Descargar</a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="text-center py-20 relative z-10">
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Minería Monero sin complicaciones</h2>
+  <!-- Hero con Animación de Aparición -->
+  <section class="text-center py-20 relative z-10 fade-in">
+    <h2 class="text-5xl font-extrabold text-yellow-400 leading-tight mb-6">Minería Monero sin complicaciones</h2>
     <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">MinerMAX es el software de minería optimizado para obtener el máximo rendimiento con bajo consumo y una interfaz sencilla.</p>
-    <a href="#descargar" class="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-lg text-lg hover:bg-yellow-300 transition">Descargar Ahora</a>
+    <a href="#descargar" class="bg-yellow-400 text-gray-900 font-semibold px-8 py-4 rounded-lg text-2xl hover:bg-yellow-300 transition-all duration-300 hover:scale-110">Descargar Ahora</a>
   </section>
 
-  <!-- Características -->
-  <section class="py-16 bg-gray-800 bg-opacity-90 relative z-10">
+  <!-- Características con íconos y animación -->
+  <section class="py-16 bg-gray-800 bg-opacity-90 relative z-10 fade-in">
     <div class="container mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
-      <div>
+      <div class="bg-gray-800 bg-opacity-90 shadow-xl hover:shadow-2xl rounded-lg p-6 transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-yellow-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v18m9-9H3" />
+        </svg>
         <h3 class="text-2xl font-bold text-yellow-400 mb-2">Rendimiento Máximo</h3>
         <p class="text-gray-300">Optimizado para CPUs y GPUs, MinerMAX exprime el hardware para obtener la mayor cantidad de XMR.</p>
       </div>
-      <div>
+      <div class="bg-gray-800 bg-opacity-90 shadow-xl hover:shadow-2xl rounded-lg p-6 transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-yellow-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
         <h3 class="text-2xl font-bold text-yellow-400 mb-2">Fácil de Usar</h3>
         <p class="text-gray-300">Interfaz clara y amigable que permite comenzar a minar en minutos, sin conocimientos técnicos avanzados.</p>
       </div>
-      <div>
+      <div class="bg-gray-800 bg-opacity-90 shadow-xl hover:shadow-2xl rounded-lg p-6 transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-yellow-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v18m9-9H3" />
+        </svg>
         <h3 class="text-2xl font-bold text-yellow-400 mb-2">Seguridad y Privacidad</h3>
         <p class="text-gray-300">Totalmente libre de spyware y respetuoso con tu privacidad. Ideal para minería segura de Monero.</p>
       </div>
@@ -57,14 +80,14 @@
   </section>
 
   <!-- Descarga -->
-  <section id="descargar" class="py-20 text-center relative z-10 bg-opacity-90">
+  <section id="descargar" class="py-20 text-center relative z-10 bg-opacity-90 fade-in">
     <h2 class="text-3xl md:text-4xl font-bold mb-6">Descarga MinerMAX para Windows</h2>
     <p class="text-gray-400 mb-8">Haz clic en el botón para obtener el instalador oficial.</p>
-    <a href="https://raw.githubusercontent.com/GGastoNN/MinerMAX/main/MinerMAX_Installer.exe" class="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded hover:bg-yellow-300 transition inline-block text-lg">Descargar para Windows</a>
+    <a href="https://raw.githubusercontent.com/GGastoNN/MinerMAX/main/MinerMAX_Installer.exe" class="bg-yellow-400 text-gray-900 font-semibold px-8 py-4 rounded-lg text-xl hover:bg-yellow-300 transition-all duration-300 hover:scale-110">Descargar para Windows</a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-center text-gray-500 py-6 relative z-10">
+  <footer class="bg-gray-800 text-center text-gray-500 py-6 relative z-10 fade-in">
     &copy; 2025 MinerMAX. Todos los derechos reservados.
   </footer>
 
